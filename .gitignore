@@ -1,3 +1,3 @@
-+*.exe
-+*.ini
-+!info.ini
+*.exe
+*.ini
+!info.ini
