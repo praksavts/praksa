@@ -1,0 +1,106 @@
+Inicijalizacija:
+	git init
+		(git config --global user.name=’’…”; git config --global user.email=’’…”)
+		dodavanje fajla u inicijalizovan folder
+		dodavanje u stage index – git add . 
+		commit – git commit --m “”
+	
+	git status
+	git diff
+	git log
+		git log --oneline
+		git log –since=”2016-05-02”
+		git log –since=”five days ago”
+		git log –since=5.days
+		git log --until=”2016-05-02”
+		git log --author=”Autor”
+		git log --grep=”temp” 
+		git log --p 
+		git log –format=oneline
+
+	git show 
+		git show <SHA-1>
+
+Undoing changes
+git checkout -- <ime fajla> 
+git checkout <ime grane>
+
+--------------------
+Ignoring files
+--------------------
+.gitignore
+
+*  ? [ase] [0-9] 
+!  - Negative ignore
+#  - komentar
+
+
+
+------------------------
+---Kreiranje grana ----
+-------------------------
+
+--izlistavanje gana--
+git branch
+
+--kreiranje--
+git branch nova_ideja
+
+--prebacivanje iz grana u granu --
+git checkout nova_ideja
+
+--kreira i prebacuje u granu --
+git checkout -b nova_ideja
+
+--razlika izmedju grana--
+git diff master..nova_ideja
+
+--promena imena grana--
+git branch -m staro_ime novo_ime
+
+--brisanje grane --
+git branch -d <grana_za_brisanje>
+
+--------------------
+--- Merging grana---
+--------------------
+
+--sjedinjavanje--
+git merge <ime_grane>
+
+--fast forward--
+git merge --ff-only
+git merge --no-ff <imegrane>
+
+--Abotring--
+git merge --abort
+
+
+------------
+GIT REMOTE
+-----------
+
+git remote add <alias> <url>
+
+git remote add origin https://github.com/praksavts/praksa.git
+	
+		--brisanje URL--
+		git remote rm origin
+
+
+git push -u origin master
+
+--izlistavanje remote branches--
+git branch -r     
+
+--izlistavanje svih --
+git branch -a
+
+
+--------------------------------------------
+kloniranje postojeceg GitHab repozitorijuma
+-------------------------------------------
+
+git clone <link > <ime_repozitorijuma>
+
+
