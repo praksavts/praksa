@@ -1,0 +1,4 @@
+*.exe
+*.ini
+!info.ini
+
