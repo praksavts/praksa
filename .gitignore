@@ -1,0 +1,7 @@
+
+#Ignorisi
+*.exe
+*.ini
+
+#Dozvoli
+!info.ini
